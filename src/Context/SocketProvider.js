@@ -12,7 +12,7 @@ export function SocketProvider({ id, children }) {
 
   useEffect(() => {
     const newSocket = io(
-      'https://chat-app-api-37y8.onrender.com',
+      'http://localhost:5000',
       { query: { id } }
     )
     setSocket(newSocket)
